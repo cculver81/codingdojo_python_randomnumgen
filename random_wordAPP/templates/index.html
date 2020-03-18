@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  -->
+    <style>
+ 
+    </style>
+
     <title>Document</title>
 </head>
 <body>
-    <p>{{ random_string }}</p>
-    
+    <div class="container">
+        <div class="row" id="msg">
+            <p>Random word attempt: ({{ counter }})</p>
+        </div>
+        <div class="row" id="ranNumForm">
+            <form>
+                <p>{{ random_string }}</p>
+                <button class="" onclick="window.location.href = 'https://localhost:8000/;'">Generate</button>
+                <button class="" onclick="window.location.href='https://localhost:8000/clear_counter;'">Clear</button>
+                
+            </form>
+        </div>
+    </div>
 </body>
 </html>
+
